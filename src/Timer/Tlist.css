@@ -1,0 +1,225 @@
+
+/* .taskDiv{
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+} */
+
+.task-list {
+  max-width: 600px;
+  margin: 20px auto; /* Centers the task list horizontally */
+  padding: 30px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Lighter shadow */
+}
+
+.task-list h2 {
+  text-align: center;
+  color: #4b0082; /* Dark purple */
+  margin-bottom: 20px;
+}
+
+/* Ensures all form inputs are the same size */
+.task-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.task-form input[type="text"],
+.task-form input[type="date"],
+.task-form select {
+  width: 100%; /* Makes all input fields the same width */
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+.task-form button {
+  padding: 10px;
+  background-color: #6a0dad; /* Purple color for buttons */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.task-form button:hover {
+  background-color: #8a2be2; /* Lighter purple on hover */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+li {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.3s;
+}
+
+li:hover {
+  background-color: #f0f0f0; /* Light grey on hover */
+}
+
+.task-details {
+  margin-top: 10px;
+}
+
+.task-details p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+/* Ensures all task details inputs are the same size */
+.task-details input[type="text"],
+.task-details input[type="date"],
+.task-details select {
+  width: calc(100% - 22px); /* Ensures consistency in field width */
+  padding: 8px;
+  margin: 5px 0;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+/* Save and cancel button styles */
+.save {
+  background-color: #6a0dad; /* Purple button for Save */
+  color: #fff;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.save:hover {
+  background-color: #8a2be2; /* Lighter purple on hover */
+}
+
+.update button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  color: #4b0082; /* Dark purple */
+  transition: color 0.3s;
+  margin-right: 10px;
+}
+
+.update button:hover {
+  color: #8a2be2; /* Lighter purple on hover */
+}
+
+/* Completed Task Checkbox */
+.task-details input[type="checkbox"] {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+/* Cancel button */
+button.cancel {
+  background-color: #ff6347; /* Red for cancel */
+  color: #fff;
+  padding: 2px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+button.cancel:hover {
+  background-color: #c82333; /* Darker red on hover */
+}
+
+/* Add padding to center content properly */
+body {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ensure content is vertically centered */
+  
+}
+
+.task-details {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #eeeeee;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #f4f4f4;
+  margin-top: 10px;
+}
+
+.task-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.task-middle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.task-info {
+  display: flex;
+  flex-direction: column;
+  
+  
+}
+
+.task-info-item {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.task-info-item:last-child {
+  margin-right: 0;
+}
+
+.task-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.update button {
+  background-color: #6a1b9a;
+  color: #ffffff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.update button:hover {
+  background-color: #4a148c;
+}
+
+.task-action{
+  display: flex;
+  justify-content: space-between;
+  
+}

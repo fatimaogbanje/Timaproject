@@ -1,0 +1,221 @@
+/* Dashboard Container */
+.dashboard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  
+  background-color: #6a1b9a; /* Deep purple */
+  padding: 40px;
+  position: fixed; /* Make the dashboard fixed */
+  top: 0; /* Fix it to the top of the page */
+  left: 0;
+  width: 96%; /* Make it span the full width of the page */
+  z-index: 700; /* Ensure it stays on top of other content */
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7); /* Optional shadow for better visibility */
+}
+
+
+/* Focus button container */
+.focus-toggle-container {
+  position: fixed;
+  top: 2px; /* Move it slightly lower to avoid overlap with the dashboard */
+  right: 20px;
+  z-index: 1001; /* Ensure the focus button stays on top of the dashboard */
+  display: flex;
+  align-items: center;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 34px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #8e24aa;
+}
+
+input:checked + .slider:before {
+  transform: translateX(14px);
+}
+
+.focus-mode-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 400px;
+  background-color: ; /* Dark gray background for the container */
+  height: 100vh; /* Full screen container */
+  color: #D3D3D3; /* Light gray text for general content */
+}
+
+.focus-playlist {
+  text-align: center;
+  margin-bottom: 30px;
+  
+  background-color: #4B0082; /* Deep purple background for playlist area */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow for modern effect */
+  width: 90%;
+  max-width: 600px; /* Ensuring it doesn't get too wide */
+  color: #F8F8FF; /* Very light gray for contrast */
+}
+
+.focus-playlist h2 {
+  font-size: 2em; /* Slightly larger font for heading */
+  color: #D8BFD8; /* Lighter purple color for headings */
+  margin-bottom: 10px;
+}
+
+.focus-playlist p {
+  font-size: 1.1em;
+  color: #D3D3D3; /* Light gray for supporting text */
+}
+
+.focus-playlist button {
+  background-color: #8A2BE2; /* Brighter purple for buttons */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1em;
+}
+
+.focus-playlist button:hover {
+  background-color: #9370DB; /* Lighter purple on hover */
+}
+
+/* Additional responsive tweaks */
+@media (max-width: 768px) {
+  .focus-playlist {
+    width: 95%;
+  }
+
+  .focus-playlist h2 {
+    font-size: 1.6em;
+  }
+}
+
+/* Add padding to avoid content being hidden behind the fixed dashboard */
+body {
+  padding-top: 80px; /* Adjust based on the height of the dashboard */
+}
+
+
+/* Header Styles */
+.dashboard-header {
+  
+}
+
+.dashboard-header h1 {
+  margin: 0;
+  color: #ccc;
+  font-size: 2.5em;
+  animation: slideInLeft 1s ease-out;
+}
+
+/* Right Side Container */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+
+
+
+/* Navigation Styles */
+.dashboard-nav {
+
+}
+
+.dashboard-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  animation: slideInRight 1s ease-out;
+   /* Arrange navbar items horizontally */
+}
+
+.dashboard-nav ul li {
+  margin-left: 20px;
+  background-color: #8e24aa; /* Lighter purple */
+  font-size: 1.1em;
+  text-decoration: none;
+  padding: 10px 2px;
+  border-radius: 100px;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+
+  
+  
+}
+
+.dashboard-nav ul li a {
+  color: #fff;
+  font-size: 1.1em;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 100px;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dashboard-nav ul li a:hover {
+  background-color: #ab47bc; /* Even lighter purple */
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+

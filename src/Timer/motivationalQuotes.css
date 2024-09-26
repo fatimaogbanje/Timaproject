@@ -1,0 +1,61 @@
+.motivational-quotes {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #4a4a4a; /* Soft grey for the text */
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f8f8f8; /* Light grey background */
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.7); /* Soft shadow for depth */
+  max-width: 500px; /* Fixed width for consistency */
+  width: 100%; /* Make sure it scales on smaller screens */
+  margin: 20px auto;
+  position: relative;
+  overflow-wrap: break-word; /* Ensure long words or quotes break and wrap */
+}
+
+.motivational-quotes p {
+  color: #6a0dad; /* Purple for quote emphasis */
+  font-style: italic;
+  margin: 0; /* Remove default margin to keep quotes aligned properly */
+  animation: fadeInOut 2s ease-in-out infinite; /* Animate only the quote text */
+  padding: 0 15px;
+  white-space: normal; /* Allow text to wrap within the container */
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  25% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  75% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+.motivational-quotes::before {
+  content: "“";
+  font-size: 4rem;
+  color: #6a0dad; /* Purple quotation mark */
+  position: absolute;
+  left: -10px;
+  top: -10px;
+}
+
+.motivational-quotes::after {
+  content: "”";
+  font-size: 4rem;
+  color: #6a0dad;
+  position: absolute;
+  right: -10px;
+  bottom: -10px;
+}

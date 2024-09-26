@@ -1,0 +1,41 @@
+/* Suggestions Component Styling */
+
+  
+  .suggestions h3 {
+    font-size: 1.5rem;
+    color: #4a4a4a;
+    margin-bottom: 10px;
+  }
+  
+  .suggestions p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  .suggestions p::before {
+    content: "💡 ";
+    font-size: 1.5rem;
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+  
+  .suggestions p {
+    background-color: #e8f4ff;
+    border-left: 4px solid purple;
+    padding: 10px;
+    border-radius: 5px;
+    animation: slideInLeft 0.8s ease-out;
+  }
+
+  @keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  

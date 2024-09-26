@@ -1,0 +1,56 @@
+
+body{
+  margin-top: 20px;
+}
+
+.pomodoro-timer {
+  text-align: center;
+  margin: 0px;
+  padding-bottom: 10px;
+  background: linear-gradient(to right, #6a1b9a, #ff5722, #ffeb3b);
+}
+ .hp{
+  padding-top: 10px;
+ }
+
+.timer-display {
+  font-size: 48px;
+  margin: 20px 0;
+  color: #6a0dad;
+}
+
+.pbutton {
+  margin: 5px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #6a0dad;
+  color: white;
+  cursor: pointer;
+}
+
+.pbutton:hover {
+  background-color: #ffdd00;
+}
+
+/* Styles for the input field below buttons */
+.custom-time-input {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.custom-time-input label {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.custom-time-input input {
+  padding: 8px;
+  width: 100px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  text-align: center;
+}

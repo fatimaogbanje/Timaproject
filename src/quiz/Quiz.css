@@ -1,0 +1,123 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #eaeaea; /* Light grey background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Container for the quiz app */
+  .quiz-app {
+    
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 400px;
+    
+    
+    
+    
+    padding: 50px;
+    background-color: #ffffff; /* White background for content area */
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    border: 1px solid #ddd; /* Light grey border */
+  }
+  
+  /* Headings */
+  h2 {
+    color: #4a148c; /* Dark purple */
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Input and Buttons */
+  input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  button {
+    background-color: #4a148c; /* Dark purple */
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  button:hover {
+    background-color: #6a1b9a; /* Lighter purple */
+    transform: scale(1.02);
+  }
+  
+  button:disabled {
+    background-color: #ccc; /* Grey when disabled */
+    cursor: not-allowed;
+  }
+  
+  /* Quiz Options */
+  label {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 16px;
+  }
+  
+  input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  /* Timer */
+  .timer {
+    font-weight: bold;
+    color: #d32f2f; /* Red for emphasis */
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
+  /* Score and Results */
+  .score {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #4a148c; /* Dark purple */
+  }
+   
+  .resultd{
+    
+  }
+  
+  .results {
+    margin-top: 20px;
+  }
+  
+  .results div {
+    
+    margin-bottom: 1px;
+    border-bottom: 6px solid #ddd;
+    padding-bottom: 10px;
+  }
+  
+  .results p {
+    font-size: 16px;
+  }
+
+  .question {
+    font-weight: bold;
+    color: #333; /* Darker color for the question */
+    font-size: 1.2rem; /* Optional: Increase the font size slightly */
+  }
+  
+  

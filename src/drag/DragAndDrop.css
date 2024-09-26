@@ -1,0 +1,67 @@
+/* Container for the drag-and-drop component */
+.drag-and-drop-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    max-width: 700px;
+    margin-bottom: 100px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styling for the dropzone area */
+  .dropzone {
+    width: 90%;
+    border:  #8a2be2; /* Purple border */
+    background-color: #e6e6fa; /* Light lavender background */
+    color: #4a4a4a; /* Dark grey text */
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .dropzone:hover {
+    background-color: #d8bfd8; /* Slightly darker lavender on hover */
+    border-color: #6a0dad; /* Darker purple on hover */
+  }
+  
+  /* List of audio files */
+  .audio-list {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  /* Each audio item container */
+  .audio-item {
+    background-color: #fff; /* White background for audio files */
+    border-left: 5px solid #8a2be2; /* Purple left border */
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* Name of the audio file */
+  .audio-name {
+    font-weight: bold;
+    color: #4a4a4a; /* Dark grey text */
+    margin-right: 10px;
+    max-width: 60%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Truncate long file names */
+  }
+  
+  /* Audio player styling */
+  .audio-player {
+    flex-grow: 1;
+    max-width: 200px;
+  }
+  

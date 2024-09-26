@@ -1,0 +1,150 @@
+/* Center the draggable container on the page */
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  
+  padding: 20px;
+  overflow: hidden; 
+}
+
+/* Container for draggable items */
+.draggable-container {
+  width: 300px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style for each draggable item */
+.draggable-item {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: grabbing;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Lift effect when dragging */
+.draggable-item.dragging {
+  background-color: #e0f7fa;
+  border-color: #80deea;
+  transform: scale(1.05); /* Slightly larger during dragging */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.9); /* More pronounced shadow */
+  
+}
+
+/* Handle area styling */
+.handle {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  font-size: 18px;
+  color: #555;
+  cursor: grab;
+  transition: color 0.3s ease;
+}
+
+/* Adjust handle when dragging */
+.handle:active {
+  cursor: grabbing;
+  color: #333; /* Darker color when actively dragging */
+}
+
+/* Heading styling */
+h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+.draggable-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+
+.item-content {
+  display: flex;
+  align-items: center;
+}
+
+
+.content {
+  flex-grow: 1;
+}
+
+.remove-button {
+  margin-left: 10px;
+  background-color: ;
+  
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.remove-button:hover {
+  background-color: #e60000;
+}
+
+.add-item {
+  
+  width: 40px;
+  height: 45px;
+  
+
+  background-color: #6a1b9a;
+  padding: 10px;
+}
+
+.add-item input {
+  padding: 10px;
+  margin-right: 10px;
+  background-color: black;
+}
+
+/* .add-item button {
+  padding: 5px 10px;
+  
+  
+} */
+
+.dragin{
+  display: flex;
+  justify-content: space-between;
+  
+  padding: 1px;
+  background-color: ;
+  
+
+
+}
+
+.dragin input{
+  width: 220px;
+}
+
+
+.handle {
+  font-size: 1.5em;
+  margin-right: 10px;
+  cursor: grab;
+  color: #6a1b9a; /* Deep purple */
+}
+
